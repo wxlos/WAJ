@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Whack a JJK</title>
+        <link rel="stylesheet" href="mole.css">
+        <script src="mole.js"></script>
+    </head>
+
+    <body>
+        <h1>Whack a JJK</h1>
+        <h2 id="score">0</h2>
+        <!--3x3 board-->
+        <div id="board"></div>
+        <button id="music">Special</button>
+        <script>
+            let music = document.getElementById("music");
+            function playMusic(){
+                let audio = new Audio("SPECIALZ.mp3");
+                audio.play();
+            }
+            music.addEventListener("click", playMusic);
+        </script>
+    </body>
+</html>

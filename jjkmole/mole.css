@@ -1,0 +1,42 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: red;
+    background: url("./shibuya.jpeg");
+    background-size: cover;
+}
+
+
+#board{
+    width:540px;
+    height:540px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    background: url("./firemole.gif");
+    background-size: cover;
+    border: 3px solid red;
+    border-radius: 25px;
+
+}
+
+#board div{
+    /* board = 540x540, divide into 3x3 tiles --> 180x180 per div*/
+    width: 180px;
+    height: 180px;
+    background-image: url("./realm.webp");
+    background-size: cover;
+    
+}
+
+#board div img{
+    /* all img tags inside tile div tags */
+    width: 100px;
+    height: 100px;
+
+    user-select: none;
+    
+}
+
